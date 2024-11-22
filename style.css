@@ -1,0 +1,203 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    padding: 20px;
+    background-color: #075353;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+
+form select,
+form input {
+    width: 60%;
+    color: #ffffff;
+    background: none;
+}
+
+form input::placeholder{
+    color: #fff;
+}
+
+form option {
+    background: #075353;
+    color: #ffffff;
+}
+
+form input,
+form select,
+form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.5rem;
+}
+
+form button {
+    width: 25%;
+    background-color: #018786;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #018787b2;
+}
+
+.filter {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.filter label {
+    margin-right: 10px;
+    font-size: 1.8rem;
+}
+
+.filter select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #ffffff;
+    background: none;
+    border-radius: 4px;
+}
+
+.filter option {
+    color: #ffffff;
+    background: #075353;
+}
+
+.expense-table table {
+    width: 100%;
+    border: 3px solid #018786;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.expense-table th,
+.expense-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 1.8rem;
+    text-align: left;
+    border: none;
+    border: 2px solid #018786;
+}
+
+.expense-table th {
+    background-color: #018786;
+    color: #fff;
+    border: 1px solid #075353;
+}
+
+.total-amount {
+    text-align: right;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.edit-btn,
+.delete-btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #22ff00;
+}
+
+.delete-btn {
+    margin-left: 1rem;
+    color: #ff0101;
+}
+
+
+@media (max-width: 1440px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 98%;
+    }
+}
+
+@media (max-width: 430px) {
+    html {
+        font-size: 45%;
+    }
+
+    .container {
+        padding: 20px 5px;
+    }
+
+    form select,
+    form input {
+        width: 80%;
+    }
+
+    form button {
+        width: 40%;
+    }
+
+    .expense-table th,
+    .expense-table td {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 375px) {
+    html {
+        font-size: 42%;
+    }
+
+    .expense-table th,
+    .expense-table td {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 375px) {
+    html {
+        font-size: 40%;
+    }
+}
